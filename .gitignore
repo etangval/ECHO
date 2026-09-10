@@ -21,6 +21,9 @@ samples/
 *.mp3
 *.mp4
 *.fits
+*.nwb
+*.parquet
+*.xlsx
 *.evt
 *.gz
 *.sqlite*

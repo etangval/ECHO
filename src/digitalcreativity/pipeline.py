@@ -60,17 +60,23 @@ def read_events(path):
     return frame[known].sort_values("time_seconds", kind="stable").reset_index(drop=True)
 
 
-def prepare_marks(frame, kind, k, seed):
+def prepare_marks(frame, kind, k, seed, minimum_category_events=1):
     if kind == "categorical":
         if "category" not in frame or frame.category.isna().any() or (frame.category == "").any():
             raise ValueError("Every event requires a nonempty category")
-        categories = np.sort(frame.category.unique())
+        all_categories = np.sort(frame.category.unique())
+        counts = frame.category.value_counts()
+        categories = np.sort(counts[counts >= minimum_category_events].index.to_numpy())
+        if not len(categories):
+            raise ValueError("No category meets the explicitly declared minimum event count")
         rng = np.random.Generator(np.random.PCG64(np.random.SeedSequence([seed, k])))
         selected = np.sort(rng.choice(categories, min(k, len(categories)), replace=False))
         keep = frame.category.isin(selected)
         frame = frame.loc[keep].copy()
         labels = np.searchsorted(selected, frame.category.to_numpy())
-        info = dict(method="fixed_seed_uniform_identity_selection", input_categories=len(categories),
+        info = dict(method="fixed_seed_uniform_identity_selection", input_categories=len(all_categories),
+                    eligible_categories=len(categories), minimum_category_events=minimum_category_events,
+                    ineligible_categories=len(all_categories)-len(categories),
                     categories=selected.tolist(), retained_events=len(frame), seed=seed,
                     inclusion_probability=min(k, len(categories))/len(categories))
     elif kind == "geographic":
@@ -113,7 +119,7 @@ def sonify(source, output, p, adapter="categorical", mode="auto", intervals=None
     total = len(frame)
     # Validate coverage against all input events before selecting identities.
     coverage = read_coverage(intervals, frame.time_seconds.to_numpy()) if mode == "auto" else None
-    frame, mark_info = prepare_marks(frame, adapter, p["voice_budget"], p["seed"])
+    frame, mark_info = prepare_marks(frame, adapter, p["voice_budget"], p["seed"], p.get("minimum_category_events", 1))
     t = frame.time_seconds.to_numpy(float)
     group = frame.group_index.to_numpy(int)
     categories = mark_info["categories"]
@@ -164,7 +170,9 @@ def sonify(source, output, p, adapter="categorical", mode="auto", intervals=None
     if random_baseline:
         # Same pitch inventory, times, velocities and category-specific pan.
         # Only the identity-to-pitch bijection is permuted.
-        random_mapping = np.random.default_rng(p["seed"]+9001).permutation(mapping)
+        active = np.unique(group)
+        random_mapping = mapping.copy()
+        random_mapping[active] = np.random.default_rng(p["seed"]+9001).permutation(mapping[active])
         control = {key: value.copy() for key, value in events.items()}
         control["pitch"] = random_mapping[group]
         np.savez_compressed(folder/"random_events.npz", **control)
@@ -181,7 +189,7 @@ def sonify(source, output, p, adapter="categorical", mode="auto", intervals=None
         adapter=mark_info, protocol=p, mode=mode, context=context, timing=timing,
         pitch_maps=maps, optimization_runs=runs, objective_scores=scores,
         original_objective_frames=objective.original_frames, distinct_active_sets=len(objective.active),
-        baseline="Uniform permutation of the optimized pitch inventory; per-event timing, velocity and pan fixed" if random_baseline else None,
+        baseline="Uniform permutation of the active optimized pitch inventory; inactive assignments, per-event timing, velocity and pan fixed" if random_baseline else None,
         reversibility="Prepared categorical event multiset plus affine clock; not raw discarded events, continuous marks or audio",
         hashes={f.name:digest(f) for f in folder.iterdir() if f.is_file()})
     save_json(folder/"manifest.json", manifest)

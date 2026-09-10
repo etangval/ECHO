@@ -107,6 +107,25 @@ def test_single_category_short_expression_and_midi(tmp_path):
     assert pipeline.verify(folder)["conditions"]["optimized"]["events"] == 3
 
 
+def test_random_baseline_preserves_active_pitch_inventory(tmp_path, monkeypatch):
+    source = make_csv(tmp_path, [0., 1., 2., 3., 100.], ['a', 'b', 'a', 'b', 'inactive'])
+    coverage = tmp_path/'coverage.csv'
+    pd.DataFrame(dict(start_seconds=[0.], stop_seconds=[101.])).to_csv(coverage, index=False)
+    monkeypatch.setattr(temporal, 'representative_context', lambda *a: ({}, pd.DataFrame()))
+    def selected(t, context, p):
+        return dict(row_start=0, row_stop_exclusive=4, source_start_seconds=0.,
+                    source_stop_seconds=4., speed=1.), t[:4]+p['intro_seconds'], pd.DataFrame()
+    monkeypatch.setattr(temporal, 'choose_speed', selected)
+    folder = tmp_path/'active'
+    m = pipeline.sonify(source, folder, pipeline.protocol(20, voices=3, steps=20),
+                       intervals=coverage, random_baseline=True)
+    with np.load(folder/'events.npz') as a, np.load(folder/'random_events.npz') as b:
+        assert set(a['pitch']) == set(b['pitch'])
+        for k in a.files:
+            if k != 'pitch': np.testing.assert_array_equal(a[k], b[k])
+    assert m['pitch_maps']['optimized']['inactive'] == m['pitch_maps']['random']['inactive']
+
+
 def test_auto_speed_is_fastest_feasible_and_coverage_is_required(tmp_path):
     rng = np.random.default_rng(4)
     t = np.sort(rng.uniform(0, 300, 700))
