@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "digitalcreativity-sonification"
+version = "0.1.0"
+description = "Event-preserving point-process sonification with higher-order harmonic optimisation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Yuji Ikegaya"}]
+dependencies = ["numpy>=1.26,<3", "pandas>=2.1,<4", "mido>=1.3,<2"]
+
+[project.optional-dependencies]
+audio = ["imageio-ffmpeg>=0.5,<1"]
+fits = ["astropy>=6,<8"]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+digitalcreativity = "digitalcreativity.cli:main"
+
+[project.urls]
+Repository = "https://github.com/etangval/digitalcreativity"
+Documentation = "https://github.com/etangval/digitalcreativity/tree/main/docs"
+
+[tool.setuptools.package-data]
+digitalcreativity = ["*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
