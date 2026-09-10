@@ -1,0 +1,43 @@
+{
+  "version": "digitalcreativity-0.1.0",
+  "seed": 20260909,
+  "voice_budget": 70,
+  "voice_budget_rationale": "User-adjustable audibility and compositional control constraint supplied by the author; not a measured universal auditory capacity.",
+  "categorical_over_budget_policy": "Uniform fixed-seed sampling of distinct identities without using event counts or timestamps; one selected identity per unique pitch.",
+  "context_expected_events": 962,
+  "context_stride_fraction": 0.5,
+  "context_minimum_events": 20,
+  "representative_features": [
+    "log_relative_rate",
+    "log1p_isi_cv",
+    "log1p_fano_16_bins",
+    "normalized_mark_entropy",
+    "js_to_global_mark_distribution"
+  ],
+  "representative_selection": "Euclidean medoid after within-record midrank normalization of all five features; earliest breaks ties.",
+  "output_seconds": 120,
+  "intro_seconds": 1,
+  "active_seconds": 109,
+  "tail_seconds": 10,
+  "maximum_mean_attacks_per_second": 3,
+  "resonance_decay_seconds": 1.5,
+  "load_quantile": 0.95,
+  "maximum_resonance_load_quantile": 8,
+  "attack_window_seconds": 0.25,
+  "maximum_attack_window_count_quantile": 3,
+  "load_grid_seconds": 0.02,
+  "auditory_profile_status": "Declared design targets for a spacious listening texture, to be tested with listeners and sensitivity analyses; not psychophysical thresholds established by the cited literature.",
+  "speed_precision": "One or two significant digits in either the compression multiplier or the reciprocal slowdown denominator; actual event times use the chosen rounded factor.",
+  "speed_significant_digits": 1,
+  "speed_selection": "Fastest preferred factor whose centered source viewport remains in the chosen context and whose mean event density and two load quantiles satisfy the profile.",
+  "midi_pitch_min": 21,
+  "midi_pitch_max": 108,
+  "mapping_seeds": [
+    1701,
+    1723,
+    1741
+  ],
+  "mapping_proposals_each": 14000,
+  "wav_target_rms": 0.05,
+  "wav_peak_ceiling": 0.78
+}

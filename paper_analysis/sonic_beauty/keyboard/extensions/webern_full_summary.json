@@ -1,0 +1,71 @@
+{
+  "work": "Webern: Variations Op.27",
+  "aggregation": "equal mean of three movements",
+  "repeats": "written score, not expanded",
+  "movements": [
+    {
+      "movement": 1,
+      "source_url": "https://raw.githubusercontent.com/automata/ana-music/335cbdc617c919d29e9384c4e490cabca5736f73/corpus/classical/users/craig/classical/webern/op27/variations-1.krn",
+      "git_blob_sha1": "89c8e2d4b5978576ef12385af86b4ddf672386af",
+      "sha256": "9bfa1a8a95f48b7f0425b536b0a08303fdbb23bb864682ae9c99588f0aeae712",
+      "measures_per_staff": [
+        54,
+        54
+      ],
+      "quarters": 40.5,
+      "notes": 317,
+      "grace_noteheads_omitted": 0,
+      "opening_last_bar": 14,
+      "opening_end_quarters": 10.5,
+      "opening_notes": 68
+    },
+    {
+      "movement": 2,
+      "source_url": "https://raw.githubusercontent.com/automata/ana-music/335cbdc617c919d29e9384c4e490cabca5736f73/corpus/classical/users/craig/classical/webern/op27/variations-2.krn",
+      "git_blob_sha1": "eda654f085ebbb3d62e5ae11435eedad15c663d1",
+      "sha256": "19a3a8bc483a58685de6b65f3dcfdb4d1b4923e94007297ee3100e487beb8526",
+      "measures_per_staff": [
+        23,
+        23
+      ],
+      "quarters": 45.0,
+      "notes": 78,
+      "grace_noteheads_omitted": 12,
+      "opening_last_bar": 8,
+      "opening_end_quarters": 17.0,
+      "opening_notes": 29
+    },
+    {
+      "movement": 3,
+      "source_url": "https://raw.githubusercontent.com/automata/ana-music/335cbdc617c919d29e9384c4e490cabca5736f73/corpus/classical/users/craig/classical/webern/op27/variations-3.krn",
+      "git_blob_sha1": "06f34eceda479d0cd32312bd7e534ea522db6fc4",
+      "sha256": "3516a4a05860b9b3736bc379c1a88eea20d66da1590330d82ba1ad17092ee5ec",
+      "measures_per_staff": [
+        66,
+        66
+      ],
+      "quarters": 396.0,
+      "notes": 379,
+      "grace_noteheads_omitted": 3,
+      "opening_last_bar": 8,
+      "opening_end_quarters": 48.0,
+      "opening_notes": 23
+    }
+  ],
+  "coordinates": {
+    "H": 0.6853214105981663,
+    "R": 0.13073501122282935,
+    "coverage": 0.6248877665544332,
+    "X": 49.90111119258348,
+    "X_min": 38.303162413589156,
+    "X_max": 58.68899148847455,
+    "M": 0.927044178268995,
+    "Y": 41.608330253495545,
+    "Y_min": 26.9746654307246,
+    "Y_max": 64.61013506780692,
+    "M_span_0.5": 1.0553564478949296,
+    "M_span_1": 1.1037216875239373,
+    "M_span_2": 0.9139398317274173,
+    "M_span_4": 0.6351587459296958
+  }
+}

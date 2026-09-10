@@ -1,0 +1,64 @@
+{
+  "source": "Current manuscript Section 3.3; aggregate counts only",
+  "observations": "453 completed responses; independent persons are not verified across devices",
+  "null": "P(optimized | non-neutral response) = 0.5",
+  "test": "Exact two-sided conditional sign test (binomial with p=0.5)",
+  "multiplicity": "Holm separately across 3 pooled outcomes and 9 source-specific outcomes",
+  "interval": "95% Clopper\u2013Pearson exact binomial interval for optimized share among non-neutral responses; not simultaneous",
+  "not_recomputed": [
+    "ordinal-score bootstrap",
+    "covariate adjustments",
+    "attention and placement sensitivity"
+  ],
+  "checks": "Domain sums, totals, exact-binomial symmetry, independent beta-quantile interval formula passed",
+  "pooled": [
+    {
+      "outcome": "Sonic beauty",
+      "source": "Pooled",
+      "optimized": 288,
+      "equal": 77,
+      "random": 88,
+      "total": 453,
+      "nonneutral": 376,
+      "optimized_share_all": 0.6357615894039735,
+      "optimized_share_nonneutral": 0.7659574468085106,
+      "p_exact_two_sided": 6.419402804278309e-26,
+      "exact_lower": 0.719828439495141,
+      "exact_upper": 0.8078427066124254,
+      "p_holm": 1.2838805608556618e-25,
+      "holm_family": "3 pooled outcomes"
+    },
+    {
+      "outcome": "Pleasantness",
+      "source": "Pooled",
+      "optimized": 318,
+      "equal": 49,
+      "random": 86,
+      "total": 453,
+      "nonneutral": 404,
+      "optimized_share_all": 0.7019867549668874,
+      "optimized_share_nonneutral": 0.7871287128712872,
+      "p_exact_two_sided": 2.2134237178518727e-32,
+      "exact_lower": 0.7439402728990949,
+      "exact_upper": 0.8260523318318844,
+      "p_holm": 6.640271153555618e-32,
+      "holm_family": "3 pooled outcomes"
+    },
+    {
+      "outcome": "Personal preference",
+      "source": "Pooled",
+      "optimized": 264,
+      "equal": 88,
+      "random": 101,
+      "total": 453,
+      "nonneutral": 365,
+      "optimized_share_all": 0.5827814569536424,
+      "optimized_share_nonneutral": 0.7232876712328767,
+      "p_exact_two_sided": 6.266279752836246e-18,
+      "exact_lower": 0.6743324930021154,
+      "exact_upper": 0.7685785114158373,
+      "p_holm": 6.266279752836246e-18,
+      "holm_family": "3 pooled outcomes"
+    }
+  ]
+}

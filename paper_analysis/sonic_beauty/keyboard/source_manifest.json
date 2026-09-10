@@ -1,0 +1,512 @@
+[
+  {
+    "id": "bach",
+    "composer": "Bach",
+    "title": "平均律第1巻 第1番 前奏曲 BWV 846",
+    "short": "Prelude BWV 846",
+    "path": "ftp/BachJS/BWV846/wtk1-prelude1/wtk1-prelude1.ly",
+    "commit": "2144afd6f52d56c5b6995b8b589ef1268b3139f0",
+    "source_url": "https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/BachJS/BWV846/wtk1-prelude1/wtk1-prelude1.ly",
+    "main": "analysis/repertoire/bach/wtk1-prelude1.ly",
+    "duration_quarters": 140.0,
+    "last_bar": 35,
+    "noteheads": 617,
+    "grace_noteheads_omitted": 0,
+    "pitch_min": 36,
+    "pitch_max": 81,
+    "staff_noteheads": {
+      "lower": 202,
+      "upper": 415
+    },
+    "source_sha256": "9e4540143b5c5a9884f215428837fe91d1b471b02669f3a07ce50560736078e9",
+    "license_lines": [
+      "maintainer = \"Tobias Erbsland\"",
+      "copyright = \"Public Domain\"",
+      "tagline = \\markup { \\override #'(box-padding . 1.0) \\override #'(baseline-skip . 2.7) \\box \\center-column { \\small \\line { Sheet music from \\with-url #\"http://www.MutopiaProject.org\" \\line { \\teeny www. \\hspace #-1.0 MutopiaProject \\hspace #-1.0 \\teeny .org \\hspace #0.5 } • \\hspace #0.5 \\italic Free to download, with the \\italic freedom to distribute, modify and perform. } \\line { \\small \\line { Typeset using \\with-url #\"http://www.LilyPond.org\" \\line { \\teeny www. \\hspace #-1.0 LilyPond \\hspace #-1.0 \\teeny .org } by \\maintainer \\hspace #-1.0 . \\hspace #0.5 Reference: \\footer } } \\line { \\teeny \\line { This sheet music has been placed in the public domain by the typesetter, for details see: \\hspace #-0.5 \\with-url #\"http://creativecommons.org/licenses/publicdomain\" http://creativecommons.org/licenses/publicdomain } } } }"
+    ]
+  },
+  {
+    "id": "rameau",
+    "composer": "Rameau",
+    "title": "タンブーラン",
+    "short": "Tambourin",
+    "path": "ftp/RameauJP/tambourin/tambourin.ly",
+    "commit": "2144afd6f52d56c5b6995b8b589ef1268b3139f0",
+    "source_url": "https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/RameauJP/tambourin/tambourin.ly",
+    "main": "analysis/repertoire/rameau/tambourin.ly",
+    "duration_quarters": 248.0,
+    "last_bar": 62,
+    "noteheads": 577,
+    "grace_noteheads_omitted": 0,
+    "pitch_min": 40,
+    "pitch_max": 83,
+    "staff_noteheads": {
+      "up": 317,
+      "down": 260
+    },
+    "source_sha256": "2596f4b7d95d27be427669df34dc8bd4c54758e2ddec4f8de1a4c4c369c80da3",
+    "license_lines": [
+      "license = \"Public Domain\"",
+      "maintainer = \"Ludovic Sardain\"",
+      "copyright =  \\markup { \\override #'(baseline-skip . 0 ) \\right-column { \\sans \\bold \\with-url #\"http://www.MutopiaProject.org\" { \\abs-fontsize #9  \"Mutopia \" \\concat { \\abs-fontsize #12 \\with-color #white \\char ##x01C0 \\abs-fontsize #9 \"Project \" } } } \\override #'(baseline-skip . 0 ) \\center-column { \\abs-fontsize #11.9 \\with-color #grey \\bold { \\char ##x01C0 \\char ##x01C0 } } \\override #'(baseline-skip . 0 ) \\column { \\abs-fontsize #8 \\sans \\concat { \" Typeset using \" \\with-url #\"http://www.lilypond.org\" \"LilyPond\" \" by \" \\maintainer \" \" \\char ##x2014 \" \" \\footer } \\concat { \\concat { \\abs-fontsize #8 \\sans{ \" Placed in the \" \\with-url #\"http://creativecommons.org/licenses/publicdomain\" \"public domain\" \" by the typesetter \" \\char ##x2014 \" free to distribute, modify, and perform\" } } \\abs-fontsize #13 \\with-color #white \\char ##x01C0 } } }"
+    ]
+  },
+  {
+    "id": "scarlatti",
+    "composer": "Scarlatti",
+    "title": "ソナタ ト長調 K.455",
+    "short": "Sonata K.455",
+    "path": "ftp/ScarlattiD/K455/scarlatti-k455/scarlatti-k455.ly",
+    "commit": "2144afd6f52d56c5b6995b8b589ef1268b3139f0",
+    "source_url": "https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/ScarlattiD/K455/scarlatti-k455/scarlatti-k455.ly",
+    "main": "analysis/repertoire/scarlatti/scarlatti-k455.ly",
+    "duration_quarters": 864.0,
+    "last_bar": 216,
+    "noteheads": 2546,
+    "grace_noteheads_omitted": 4,
+    "pitch_min": 31,
+    "pitch_max": 91,
+    "staff_noteheads": {
+      "upper": 1586,
+      "lower": 960
+    },
+    "source_sha256": "2032dcf01ce7e28b861f51c40e4b94634c080ef27d8874d0536ea62617eafb73",
+    "license_lines": [
+      "maintainer = \"Knute Snortum\"",
+      "license = \"Creative Commons Attribution-ShareAlike 4.0\"",
+      "copyright = \\markup {\\override #'(font-name . \"DejaVu Sans, Bold\") \\override #'(baseline-skip . 0) \\right-column {\\with-url #\"http://www.MutopiaProject.org\" {\\abs-fontsize #9  \"Mutopia \" \\concat {\\abs-fontsize #12 \\with-color #white \\char ##x01C0 \\abs-fontsize #9 \"Project \"}}}\\override #'(font-name . \"DejaVu Sans, Bold\") \\override #'(baseline-skip . 0 ) \\center-column {\\abs-fontsize #11.9 \\with-color #grey \\bold {\\char ##x01C0 \\char ##x01C0 }}\\override #'(font-name . \"DejaVu Sans,sans-serif\") \\override #'(baseline-skip . 0) \\column { \\abs-fontsize #8 \\concat {\"Typeset using \" \\with-url #\"http://www.lilypond.org\" \"LilyPond \" \\char ##x00A9 \" 2016 \" \"by \" \\maintainer \" \" \\char ##x2014 \" \" \\footer}\\concat {\\concat {\\abs-fontsize #8 { \\with-url #\"http://creativecommons.org/licenses/by-sa/4.0/\" \"Creative Commons Attribution ShareAlike 4.0 International License \"\\char ##x2014 \" free to distribute, modify, and perform\" }}\\abs-fontsize #13 \\with-color #white \\char ##x01C0 }}}"
+    ]
+  },
+  {
+    "id": "mozart_turkish",
+    "composer": "Mozart",
+    "title": "トルコ行進曲 K.331 第3楽章",
+    "short": "Turkish March",
+    "path": "ftp/MozartWA/KV331/KV331_3_RondoAllaTurca/KV331_3_RondoAllaTurca-lys/KV331_3_RondoAllaTurca.ly",
+    "commit": "2144afd6f52d56c5b6995b8b589ef1268b3139f0",
+    "source_url": "https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/MozartWA/KV331/KV331_3_RondoAllaTurca/KV331_3_RondoAllaTurca-lys/KV331_3_RondoAllaTurca.ly",
+    "main": "analysis/repertoire/mozart_turkish/KV331_3_RondoAllaTurca.ly",
+    "duration_quarters": 431.0,
+    "last_bar": 216,
+    "noteheads": 2444,
+    "grace_noteheads_omitted": 256,
+    "pitch_min": 45,
+    "pitch_max": 88,
+    "staff_noteheads": {
+      "": 2444
+    },
+    "source_sha256": "eb5aeab7ca2cd4299e7a99f95dee9c8d2d52d73c8327474b6249c1ee4d5a20d9",
+    "license_lines": [
+      "license = \"Public Domain\"",
+      "maintainer = \"Rune Zedeler and Chris Sawer\"",
+      "copyright =  \\markup { \\override #'(baseline-skip . 0 ) \\right-column { \\sans \\bold \\with-url #\"http://www.MutopiaProject.org\" { \\abs-fontsize #9  \"Mutopia \" \\concat { \\abs-fontsize #12 \\with-color #white \\char ##x01C0 \\abs-fontsize #9 \"Project \" } } } \\override #'(baseline-skip . 0 ) \\center-column { \\abs-fontsize #11.9 \\with-color #grey \\bold { \\char ##x01C0 \\char ##x01C0 } } \\override #'(baseline-skip . 0 ) \\column { \\abs-fontsize #8 \\sans \\concat { \" Typeset using \" \\with-url #\"http://www.lilypond.org\" \"LilyPond\" \" by \" \\maintainer \" \" \\char ##x2014 \" \" \\footer } \\concat { \\concat { \\abs-fontsize #8 \\sans{ \" Placed in the \" \\with-url #\"http://creativecommons.org/licenses/publicdomain\" \"public domain\" \" by the typesetter \" \\char ##x2014 \" free to distribute, modify, and perform\" } } \\abs-fontsize #13 \\with-color #white \\char ##x01C0 } } }"
+    ]
+  },
+  {
+    "id": "mozart_545",
+    "composer": "Mozart",
+    "title": "ピアノ・ソナタ K.545 第1楽章",
+    "short": "Sonata K.545 / I",
+    "path": "ftp/MozartWA/KV545/K545-1/K545-1.ly",
+    "commit": "2144afd6f52d56c5b6995b8b589ef1268b3139f0",
+    "source_url": "https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/MozartWA/KV545/K545-1/K545-1.ly",
+    "main": "analysis/repertoire/mozart_545/K545-1.ly",
+    "duration_quarters": 583.0,
+    "last_bar": 146,
+    "noteheads": 2542,
+    "grace_noteheads_omitted": 34,
+    "pitch_min": 36,
+    "pitch_max": 89,
+    "staff_noteheads": {
+      "": 2542
+    },
+    "source_sha256": "84d0e951e6d8807d3286f31ed7878a35dfddb9850bbae9156be0f5ac0a3e2e10",
+    "license_lines": [
+      "copyright = \"Creative Commons Attribution-ShareAlike 3.0\"",
+      "maintainer = \"Alejandro Sierra\"",
+      "tagline = \\markup { \\override #'(box-padding . 1.0) \\override #'(baseline-skip . 2.7) \\box \\center-column { \\abs-fontsize #10 \\line { Sheet music from \\with-url #\"http://www.MutopiaProject.org\" \\line { \\concat { \\abs-fontsize #8 www. \\abs-fontsize #11 MutopiaProject \\abs-fontsize #8 .org } \\hspace #0.5 } • \\hspace #0.5 \\italic Free to download, with the \\italic freedom to distribute, modify and perform. } \\line { \\abs-fontsize #10 \\line { Typeset using \\with-url #\"http://www.LilyPond.org\" \\line { \\concat { \\abs-fontsize #8 www. \\abs-fontsize #11 LilyPond \\abs-fontsize #8 .org }} by \\concat { \\maintainer . } \\hspace #0.5 Copyright © 2013. \\hspace #0.5 Reference: \\footer } } \\line { \\abs-fontsize #8 \\line { Licensed under the Creative Commons Attribution-ShareAlike 3.0 (Unported) License, for details \\concat { see: \\hspace #0.3 \\with-url #\"http://creativecommons.org/licenses/by-sa/3.0\" http://creativecommons.org/licenses/by-sa/3.0 } } } } }"
+    ]
+  },
+  {
+    "id": "beethoven_moon",
+    "composer": "Beethoven",
+    "title": "月光ソナタ Op.27-2 第1楽章",
+    "short": "Moonlight / I",
+    "path": "ftp/BeethovenLv/O27/moonlight/moonlight-lys/moonlight1-a4.ly",
+    "commit": "2144afd6f52d56c5b6995b8b589ef1268b3139f0",
+    "source_url": "https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/BeethovenLv/O27/moonlight/moonlight-lys/moonlight1-a4.ly",
+    "main": "analysis/repertoire/beethoven_moon/moonlight1-a4.ly",
+    "duration_quarters": 276.0,
+    "last_bar": 69,
+    "noteheads": 1183,
+    "grace_noteheads_omitted": 0,
+    "pitch_min": 29,
+    "pitch_max": 87,
+    "staff_noteheads": {
+      "up": 817,
+      "down": 366
+    },
+    "source_sha256": "97f5f8f0b3cc31de38dd2c284f7e66f4f4b319fca0cdc941ee6f5f4927833ac5",
+    "license_lines": [
+      "mutopiacopyright = \"Creative Commons Attribution-ShareAlike 2.5\"",
+      "maintainer = \"Stewart Holmes\"",
+      "copyright = \\markup { \\teeny \\center-align { \"Copyright © 2007\" \"Licensed under the Creative Commons Attribution-ShareAlike 2.5 License\" \"http://creativecommons.org/licenses/by-sa/2.5.\" } }"
+    ]
+  },
+  {
+    "id": "beethoven_elise",
+    "composer": "Beethoven",
+    "title": "エリーゼのために WoO 59",
+    "short": "Fur Elise",
+    "path": "ftp/BeethovenLv/WoO59/fur_Elise_WoO59/fur_Elise_WoO59.ly",
+    "commit": "2144afd6f52d56c5b6995b8b589ef1268b3139f0",
+    "source_url": "https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/BeethovenLv/WoO59/fur_Elise_WoO59/fur_Elise_WoO59.ly",
+    "main": "analysis/repertoire/beethoven_elise/fur_Elise_WoO59.ly",
+    "duration_quarters": 187.0,
+    "last_bar": 124,
+    "noteheads": 1038,
+    "grace_noteheads_omitted": 3,
+    "pitch_min": 33,
+    "pitch_max": 100,
+    "staff_noteheads": {
+      "up": 602,
+      "down": 436
+    },
+    "source_sha256": "828a7bd1b42e441fe1b0eb0389ba46f1502dab28bbe488389e635fb446ba7a67",
+    "license_lines": [
+      "license = \"Public Domain\"",
+      "maintainer = \"Stelios Samelis\"",
+      "copyright =  \\markup { \\override #'(baseline-skip . 0 ) \\right-column { \\sans \\bold \\with-url #\"http://www.MutopiaProject.org\" { \\abs-fontsize #9  \"Mutopia \" \\concat { \\abs-fontsize #12 \\with-color #white \\char ##x01C0 \\abs-fontsize #9 \"Project \" } } } \\override #'(baseline-skip . 0 ) \\center-column { \\abs-fontsize #11.9 \\with-color #grey \\bold { \\char ##x01C0 \\char ##x01C0 } } \\override #'(baseline-skip . 0 ) \\column { \\abs-fontsize #8 \\sans \\concat { \" Typeset using \" \\with-url #\"http://www.lilypond.org\" \"LilyPond\" \" by \" \\maintainer \" \" \\char ##x2014 \" \" \\footer } \\concat { \\concat { \\abs-fontsize #8 \\sans{ \" Placed in the \" \\with-url #\"http://creativecommons.org/licenses/publicdomain\" \"public domain\" \" by the typesetter \" \\char ##x2014 \" free to distribute, modify, and perform\" } } \\abs-fontsize #13 \\with-color #white \\char ##x01C0 } } }"
+    ]
+  },
+  {
+    "id": "schubert",
+    "composer": "Schubert",
+    "title": "即興曲 Op.90-3 D.899",
+    "short": "Impromptu Op.90/3",
+    "path": "ftp/SchubertF/D899/SchubertF-D899-3-Impromptu/SchubertF-D899-3-Impromptu.ly",
+    "commit": "2144afd6f52d56c5b6995b8b589ef1268b3139f0",
+    "source_url": "https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/SchubertF/D899/SchubertF-D899-3-Impromptu/SchubertF-D899-3-Impromptu.ly",
+    "main": "analysis/repertoire/schubert/SchubertF-D899-3-Impromptu.ly",
+    "duration_quarters": 688.0,
+    "last_bar": 86,
+    "noteheads": 2687,
+    "grace_noteheads_omitted": 15,
+    "pitch_min": 29,
+    "pitch_max": 79,
+    "staff_noteheads": {
+      "upII": 1898,
+      "downIII": 789
+    },
+    "source_sha256": "698365f64214cb784651d6869915133e5f0c16eb64cbba673d8abf649a4fb6cc",
+    "license_lines": [
+      "license = \"Public Domain\"",
+      "maintainer = \"Ph. Raynaud\"",
+      "copyright =  \\markup { \\override #'(baseline-skip . 0 ) \\right-column { \\sans \\bold \\with-url #\"http://www.MutopiaProject.org\" { \\abs-fontsize #9  \"Mutopia \" \\concat { \\abs-fontsize #12 \\with-color #white \\char ##x01C0 \\abs-fontsize #9 \"Project \" } } } \\override #'(baseline-skip . 0 ) \\center-column { \\abs-fontsize #11.9 \\with-color #grey \\bold { \\char ##x01C0 \\char ##x01C0 } } \\override #'(baseline-skip . 0 ) \\column { \\abs-fontsize #8 \\sans \\concat { \" Typeset using \" \\with-url #\"http://www.lilypond.org\" \"LilyPond\" \" by \" \\maintainer \" \" \\char ##x2014 \" \" \\footer } \\concat { \\concat { \\abs-fontsize #8 \\sans{ \" Placed in the \" \\with-url #\"http://creativecommons.org/licenses/publicdomain\" \"public domain\" \" by the typesetter \" \\char ##x2014 \" free to distribute, modify, and perform\" } } \\abs-fontsize #13 \\with-color #white \\char ##x01C0 } } }"
+    ]
+  },
+  {
+    "id": "mendelssohn",
+    "composer": "Mendelssohn",
+    "title": "ヴェネツィアの舟歌 Op.30-6",
+    "short": "Venetian Boat Song Op.30/6",
+    "path": "ftp/Mendelssohn-BartholdyF/O30/LiederOhneWorte_-_Op30_No6/LiederOhneWorte_-_Op30_No6.ly",
+    "commit": "2144afd6f52d56c5b6995b8b589ef1268b3139f0",
+    "source_url": "https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/Mendelssohn-BartholdyF/O30/LiederOhneWorte_-_Op30_No6/LiederOhneWorte_-_Op30_No6.ly",
+    "main": "analysis/repertoire/mendelssohn/LiederOhneWorte_-_Op30_No6.ly",
+    "duration_quarters": 165.5,
+    "last_bar": 55,
+    "noteheads": 620,
+    "grace_noteheads_omitted": 4,
+    "pitch_min": 33,
+    "pitch_max": 88,
+    "staff_noteheads": {
+      "two": 417,
+      "one": 203
+    },
+    "source_sha256": "473e170a12e5654982a7288afcd6835d206106871b51dd8815c74f662ca22be7",
+    "license_lines": [
+      "copyright = \"Public Domain\"",
+      "maintainer = \"Ryan Prince\"",
+      "tagline = \\markup { \\override #'(box-padding . 1.0) \\override #'(baseline-skip . 2.7) \\box \\center-column { \\small \\line { Sheet music from \\with-url #\"http://www.MutopiaProject.org\" \\line { \\teeny www. \\hspace #-1.0 MutopiaProject \\hspace #-1.0 \\teeny .org \\hspace #0.5 } • \\hspace #0.5 \\italic Free to download, with the \\italic freedom to distribute, modify and perform. } \\line { \\small \\line { Typeset using \\with-url #\"http://www.LilyPond.org\" \\line { \\teeny www. \\hspace #-1.0 LilyPond \\hspace #-1.0 \\teeny .org } by \\maintainer \\hspace #-1.0 . \\hspace #0.5 Reference: \\footer } } \\line { \\teeny \\line { This sheet music has been placed in the public domain by the typesetter, for details see: \\hspace #-0.5 \\with-url #\"http://creativecommons.org/licenses/publicdomain\" http://creativecommons.org/licenses/publicdomain } } } }"
+    ]
+  },
+  {
+    "id": "schumann",
+    "composer": "Schumann",
+    "title": "トロイメライ Op.15-7",
+    "short": "Traumerei",
+    "path": "ftp/SchumannR/O15/SchumannOp15No07/SchumannOp15No07.ly",
+    "commit": "2144afd6f52d56c5b6995b8b589ef1268b3139f0",
+    "source_url": "https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/SchumannR/O15/SchumannOp15No07/SchumannOp15No07.ly",
+    "main": "analysis/repertoire/schumann/SchumannOp15No07.ly",
+    "duration_quarters": 97.0,
+    "last_bar": 24,
+    "noteheads": 393,
+    "grace_noteheads_omitted": 8,
+    "pitch_min": 34,
+    "pitch_max": 82,
+    "staff_noteheads": {
+      "up": 213,
+      "down": 180
+    },
+    "source_sha256": "be0a952c8465a216c8405a2f6154a9b101e983a4b080d64a90e532bd5118532a",
+    "license_lines": [
+      "copyright = \"Public Domain\"",
+      "maintainer = \"Ying-Chun Liu\"",
+      "tagline = \\markup { \\override #'(box-padding . 1.0) \\override #'(baseline-skip . 2.7) \\box \\center-align { \\small \\line { Sheet music from \\with-url #\"http://www.MutopiaProject.org\" \\line { \\teeny www. \\hspace #-1.0 MutopiaProject \\hspace #-1.0 \\teeny .org \\hspace #0.5 } • \\hspace #0.5 \\italic Free to download, with the \\italic freedom to distribute, modify and perform. } \\line { \\small \\line { Typeset using \\with-url #\"http://www.LilyPond.org\" \\line { \\teeny www. \\hspace #-1.0 LilyPond \\hspace #-1.0 \\teeny .org } by \\maintainer \\hspace #-1.0 . \\hspace #0.5 Reference: \\footer } } \\line { \\teeny \\line { This sheet music has been placed in the public domain by the typesetter, for details see: \\hspace #-0.5 \\with-url #\"http://creativecommons.org/licenses/publicdomain\" http://creativecommons.org/licenses/publicdomain } } } }"
+    ]
+  },
+  {
+    "id": "chopin",
+    "composer": "Chopin",
+    "title": "夜想曲 Op.9-2",
+    "short": "Nocturne Op.9/2",
+    "path": "ftp/ChopinFF/O9/chopin_nocturne_op9_n2/chopin_nocturne_op9_n2.ly",
+    "commit": "2144afd6f52d56c5b6995b8b589ef1268b3139f0",
+    "source_url": "https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/ChopinFF/O9/chopin_nocturne_op9_n2/chopin_nocturne_op9_n2.ly",
+    "main": "analysis/repertoire/chopin/chopin_nocturne_op9_n2.ly",
+    "duration_quarters": 222.5,
+    "last_bar": 33,
+    "noteheads": 1241,
+    "grace_noteheads_omitted": 15,
+    "pitch_min": 32,
+    "pitch_max": 99,
+    "staff_noteheads": {
+      "upper": 464,
+      "lower": 777
+    },
+    "source_sha256": "51a5a1cfed40eaee9d44f04b35673ff94240932a1f78c935d16016d0c42ac617",
+    "license_lines": [
+      "copyright = \"Creative Commons Attribution-ShareAlike 3.0\"",
+      "maintainer = \"Renato Biolcati Rinaldi\"",
+      "tagline = \\markup { \\override #'(box-padding . 1.0) \\override #'(baseline-skip . 2.7) \\box \\center-column { \\small \\line { Sheet music from \\with-url #\"http://www.MutopiaProject.org\" \\line { \\teeny www. \\hspace #-1.0 MutopiaProject \\hspace #-1.0 \\teeny .org \\hspace #0.5 } • \\hspace #0.5 \\italic Free to download, with the \\italic freedom to distribute, modify and perform. } \\line { \\small \\line { Typeset using \\with-url #\"http://www.LilyPond.org\" \\line { \\teeny www. \\hspace #-1.0 LilyPond \\hspace #-1.0 \\teeny .org } by \\maintainer \\hspace #-1.0 . \\hspace #0.5 Copyright © 2014. \\hspace #0.5 Reference: \\footer } } \\line { \\teeny \\line { Licensed under the Creative Commons Attribution-ShareAlike 3.0 (Unported) License, for details see: \\hspace #-0.5 \\with-url #\"http://creativecommons.org/licenses/by-sa/3.0\" http://creativecommons.org/licenses/by-sa/3.0 } } } }"
+    ]
+  },
+  {
+    "id": "liszt",
+    "composer": "Liszt",
+    "title": "コンソレーション 第3番 S.172",
+    "short": "Consolation No.3",
+    "path": "ftp/LisztF/S.172/liszt-consolation-no3/liszt-consolation-no3.ly",
+    "commit": "2144afd6f52d56c5b6995b8b589ef1268b3139f0",
+    "source_url": "https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/LisztF/S.172/liszt-consolation-no3/liszt-consolation-no3.ly",
+    "main": "analysis/repertoire/liszt/liszt-consolation-no3.ly",
+    "duration_quarters": 243.0,
+    "last_bar": 61,
+    "noteheads": 1078,
+    "grace_noteheads_omitted": 0,
+    "pitch_min": 36,
+    "pitch_max": 101,
+    "staff_noteheads": {
+      "down": 632,
+      "up": 446
+    },
+    "source_sha256": "dab42ef825f345e19e2dda6ed95095be9438c176af821bf7b598c32a3e252dce",
+    "license_lines": [
+      "maintainer = \"Ryan Prince\"",
+      "license = \"Creative Commons Attribution 3.0\"",
+      "copyright = \\markup {\\override #'(font-name . \"DejaVu Sans, Bold\") \\override #'(baseline-skip . 0) \\right-column {\\with-url #\"http://www.MutopiaProject.org\" {\\abs-fontsize #9  \"Mutopia \" \\concat {\\abs-fontsize #12 \\with-color #white \"ǀ\" \\abs-fontsize #9 \"Project \"}}}\\override #'(font-name . \"DejaVu Sans, Bold\") \\override #'(baseline-skip . 0 ) \\center-column {\\abs-fontsize #11.9 \\with-color #grey \\bold {\"ǀ\" \"ǀ\"}}\\override #'(font-name . \"DejaVu Sans,sans-serif\") \\override #'(baseline-skip . 0) \\column { \\abs-fontsize #8 \\concat {\"Typeset using \" \\with-url #\"http://www.lilypond.org\" \"LilyPond \" ©\" 2019 \"\"by \" \\maintainer \" — \" \\footer}\\concat {\\concat {\\abs-fontsize #8 { \\with-url #\"http://creativecommons.org/licenses/by/3.0\" \"Creative Commons Attribution 3.0 (Unported) License\" \" — free to distribute, modify, and perform\" }}\\abs-fontsize #13 \\with-color #white \"ǀ\" }}}"
+    ]
+  },
+  {
+    "id": "brahms",
+    "composer": "Brahms",
+    "title": "間奏曲 Op.118-2",
+    "short": "Intermezzo Op.118/2",
+    "path": "ftp/BrahmsJ/O118/intermezzo/intermezzo.ly",
+    "commit": "2144afd6f52d56c5b6995b8b589ef1268b3139f0",
+    "source_url": "https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/BrahmsJ/O118/intermezzo/intermezzo.ly",
+    "main": "analysis/repertoire/brahms/intermezzo.ly",
+    "duration_quarters": 372.0,
+    "last_bar": 124,
+    "noteheads": 1843,
+    "grace_noteheads_omitted": 0,
+    "pitch_min": 28,
+    "pitch_max": 85,
+    "staff_noteheads": {
+      "up": 883,
+      "down": 960
+    },
+    "source_sha256": "5bd64924ba0c1a72018144bbd9245ebef7d6892acb163fb282c3a25bd0f21623",
+    "license_lines": [
+      "copyright = \"Public Domain\"",
+      "maintainer = \"Aron Fay\"",
+      "tagline = \\markup { \\override #'(box-padding . 1.0) \\override #'(baseline-skip . 2.7) \\box \\center-column { \\small \\line { Sheet music from \\with-url #\"http://www.MutopiaProject.org\" \\line { \\concat { \\teeny www. \\normalsize MutopiaProject \\teeny .org } \\hspace #0.5 } • \\hspace #0.5 \\italic Free to download, with the \\italic freedom to distribute, modify and perform. } \\line { \\small \\line { Typeset using \\with-url #\"http://www.LilyPond.org\" \\line { \\concat { \\teeny www. \\normalsize LilyPond \\teeny .org }} by \\concat { \\maintainer . } \\hspace #0.5 Reference: \\footer } } \\line { \\teeny \\line { This sheet music has been placed in the public domain by the typesetter, for details \\concat { see: \\hspace #0.3 \\with-url #\"http://creativecommons.org/licenses/publicdomain\" http://creativecommons.org/licenses/publicdomain } } } } }"
+    ]
+  },
+  {
+    "id": "grieg",
+    "composer": "Grieg",
+    "title": "トロルハウゲンの婚礼の日 Op.65-6",
+    "short": "Wedding Day at Troldhaugen",
+    "path": "ftp/GriegE/O65/troldhaugen/troldhaugen.ly",
+    "commit": "2144afd6f52d56c5b6995b8b589ef1268b3139f0",
+    "source_url": "https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/GriegE/O65/troldhaugen/troldhaugen.ly",
+    "main": "analysis/repertoire/grieg/troldhaugen.ly",
+    "duration_quarters": 677.0,
+    "last_bar": 211,
+    "noteheads": 3932,
+    "grace_noteheads_omitted": 8,
+    "pitch_min": 26,
+    "pitch_max": 95,
+    "staff_noteheads": {
+      "lower": 1614,
+      "upper": 2318
+    },
+    "source_sha256": "eed026a31dbbdba7b0e4a633ad651db6a4aae8dbaf6570f9edae5878606b072d",
+    "license_lines": [
+      "copyright = \"Public Domain\"",
+      "maintainer = \"David Whipple\"",
+      "tagline = \\markup { \\override #'(box-padding . 1.0) \\override #'(baseline-skip . 2.7) \\box \\center-align { \\small \\line { Sheet music from \\with-url #\"http://www.MutopiaProject.org\" \\line { \\teeny www. \\hspace #-1.0 MutopiaProject \\hspace #-1.0 \\teeny .org \\hspace #0.5 } • \\hspace #0.5 \\italic Free to download, with the \\italic freedom to distribute, modify and perform. } \\line { \\small \\line { Typeset using \\with-url #\"http://www.LilyPond.org\" \\line { \\teeny www. \\hspace #-1.0 LilyPond \\hspace #-1.0 \\teeny .org } by \\maintainer \\hspace #-1.0 . \\hspace #0.5 Reference: \\footer } } \\line { \\teeny \\line { This sheet music has been placed in the public domain by the typesetter, for details see: \\hspace #-0.5 \\with-url #\"http://creativecommons.org/licenses/publicdomain\" http://creativecommons.org/licenses/publicdomain } } } }"
+    ]
+  },
+  {
+    "id": "debussy_clair",
+    "composer": "Debussy",
+    "title": "月の光",
+    "short": "Clair de lune",
+    "path": "ftp/DebussyC/L75/debussy_Ste_Bergamesq_Clair/debussy_Ste_Bergamesq_Clair.ly",
+    "commit": "2144afd6f52d56c5b6995b8b589ef1268b3139f0",
+    "source_url": "https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/DebussyC/L75/debussy_Ste_Bergamesq_Clair/debussy_Ste_Bergamesq_Clair.ly",
+    "main": "analysis/repertoire/debussy_clair/debussy_Ste_Bergamesq_Clair.ly",
+    "duration_quarters": 322.5,
+    "last_bar": 72,
+    "noteheads": 1682,
+    "grace_noteheads_omitted": 1,
+    "pitch_min": 27,
+    "pitch_max": 97,
+    "staff_noteheads": {
+      "lower": 838,
+      "upper": 844
+    },
+    "source_sha256": "c78762a27972f0643a34b994bffa1d058b1bb51e3947c0b50029aa75359e2a49",
+    "license_lines": [
+      "license = \"Public Domain\"",
+      "maintainer = \"Keith OHara\"",
+      "tagline = \\markup { \\override #'(box-padding . 1.0) \\override #'(baseline-skip . 2.7) \\box \\center-column { \\small \\line { Sheet music from \\with-url \"http://www.MutopiaProject.org\" \\line { \\teeny www. \\hspace #-1.0 MutopiaProject \\hspace #-1.0 \\teeny .org \\hspace #0.5 } • \\hspace #0.5 \\italic Free to download, with the \\italic freedom to distribute, modify and perform. } \\line { \\small \\line { Typeset using \\with-url \"http://www.LilyPond.org\" \\line { \\teeny www. \\hspace #-1.0 LilyPond \\hspace #-1.0 \\teeny .org } by \\maintainer \\hspace #-1.0 . \\hspace #0.5 Reference: \\footer } } \\line { \\teeny \\line { This sheet music has been placed in the public domain by the typesetter, for details see: \\hspace #-0.5 \\with-url \"http://creativecommons.org/licenses/publicdomain\" http://creativecommons.org/licenses/publicdomain } } } }"
+    ]
+  },
+  {
+    "id": "debussy_arab",
+    "composer": "Debussy",
+    "title": "アラベスク 第1番",
+    "short": "Arabesque No.1",
+    "path": "ftp/DebussyC/L66/debussy_Arabesque_1/debussy_Arabesque_1.ly",
+    "commit": "2144afd6f52d56c5b6995b8b589ef1268b3139f0",
+    "source_url": "https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/DebussyC/L66/debussy_Arabesque_1/debussy_Arabesque_1.ly",
+    "main": "analysis/repertoire/debussy_arab/debussy_Arabesque_1.ly",
+    "duration_quarters": 423.0,
+    "last_bar": 107,
+    "noteheads": 1557,
+    "grace_noteheads_omitted": 0,
+    "pitch_min": 28,
+    "pitch_max": 92,
+    "staff_noteheads": {
+      "upper": 825,
+      "lower": 732
+    },
+    "source_sha256": "4639d0220a0a242e2928348cdf6075a7e6cdd35a8b051d67612aa99a2d636a3a",
+    "license_lines": [
+      "copyright = \"Public Domain\"",
+      "maintainer = \"Keith OHara\"",
+      "tagline = \\markup { \\override #'(box-padding . 1.0) \\override #'(baseline-skip . 2.7) \\box \\center-column { \\small \\line { Sheet music from \\with-url #\"http://www.MutopiaProject.org\" \\line { \\teeny www. \\hspace #-1.0 MutopiaProject \\hspace #-1.0 \\teeny .org \\hspace #0.5 } • \\hspace #0.5 \\italic Free to download, with the \\italic freedom to distribute, modify and perform. } \\line { \\small \\line { Typeset using \\with-url #\"http://www.LilyPond.org\" \\line { \\teeny www. \\hspace #-1.0 LilyPond \\hspace #-1.0 \\teeny .org } by \\maintainer \\hspace #-1.0 . \\hspace #0.5 Reference: \\footer } } \\line { \\teeny \\line { This sheet music has been placed in the public domain by the typesetter, for details see: \\hspace #-0.5 \\with-url #\"http://creativecommons.org/licenses/publicdomain\" http://creativecommons.org/licenses/publicdomain } } } }"
+    ]
+  },
+  {
+    "id": "satie_gym",
+    "composer": "Satie",
+    "title": "ジムノペディ 第1番",
+    "short": "Gymnopedie No.1",
+    "path": "ftp/SatieE/gymnopedie_1/gymnopedie_1.ly",
+    "commit": "2144afd6f52d56c5b6995b8b589ef1268b3139f0",
+    "source_url": "https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/SatieE/gymnopedie_1/gymnopedie_1.ly",
+    "main": "analysis/repertoire/satie_gym/gymnopedie_1.ly",
+    "duration_quarters": 234.0,
+    "last_bar": 78,
+    "noteheads": 469,
+    "grace_noteheads_omitted": 0,
+    "pitch_min": 33,
+    "pitch_max": 81,
+    "staff_noteheads": {
+      "bass": 176,
+      "treble": 293
+    },
+    "source_sha256": "420a52244e9fbe106dd33ba2cac84414fd66e0d01c6d472205bad39678d4ce04",
+    "license_lines": [
+      "license = \"Public Domain\"",
+      "maintainer = \"Evin Robertson\"",
+      "copyright =  \\markup { \\override #'(baseline-skip . 0 ) \\right-column { \\sans \\bold \\with-url #\"http://www.MutopiaProject.org\" { \\abs-fontsize #9  \"Mutopia \" \\concat { \\abs-fontsize #12 \\with-color #white \\char ##x01C0 \\abs-fontsize #9 \"Project \" } } } \\override #'(baseline-skip . 0 ) \\center-column { \\abs-fontsize #11.9 \\with-color #grey \\bold { \\char ##x01C0 \\char ##x01C0 } } \\override #'(baseline-skip . 0 ) \\column { \\abs-fontsize #8 \\sans \\concat { \" Typeset using \" \\with-url #\"http://www.lilypond.org\" \"LilyPond\" \" by \" \\maintainer \" \" \\char ##x2014 \" \" \\footer } \\concat { \\concat { \\abs-fontsize #8 \\sans{ \" Placed in the \" \\with-url #\"http://creativecommons.org/licenses/publicdomain\" \"public domain\" \" by the typesetter \" \\char ##x2014 \" free to distribute, modify, and perform\" } } \\abs-fontsize #13 \\with-color #white \\char ##x01C0 } } }"
+    ]
+  },
+  {
+    "id": "schoenberg_19_6",
+    "composer": "Schoenberg",
+    "source_url": "https://github.com/madrisan/open-scores/blob/158926bb34475a034c3f169ec124981dc0b6e1d8/src/arnold-schoenberg/sechs-kleine-klavierstucke-op.19/Arnold-Schoenberg-Sechs-Kleine-Klavierstucke-op.19.ly",
+    "commit": "158926bb34475a034c3f169ec124981dc0b6e1d8",
+    "main_sha256": "8f15a9229a53c21911de0b6aa0b8c2f96efb5424a6ebf0e361ed68254380dfa3",
+    "attribution": "Davide Madrisan, Open Scores",
+    "license_note": "CC BY-NC-SA 4.0 as recorded during source acquisition; source files have separate contributor and upstream credits"
+  },
+  {
+    "id": "casella_31",
+    "composer": "Casella",
+    "source_url": "https://github.com/madrisan/open-scores/blob/158926bb34475a034c3f169ec124981dc0b6e1d8/src/alfredo-casella/deux-contrastes-op.31/Alfredo-Casella-Deux-Contrastes-op.31.ly",
+    "commit": "158926bb34475a034c3f169ec124981dc0b6e1d8",
+    "main_sha256": "2e3fd89d155805ce11c09f4fc88d5a2d76e26bdaf760753fb56e576091a5ea86",
+    "attribution": "Davide Madrisan, Open Scores",
+    "license_note": "CC BY-NC-SA 4.0 as recorded during source acquisition; source files have separate contributor and upstream credits"
+  },
+  {
+    "id": "szymanowski_1",
+    "composer": "Szymanowski",
+    "source_url": "https://github.com/madrisan/open-scores/blob/158926bb34475a034c3f169ec124981dc0b6e1d8/src/karol-szymanowski/nine-preludes-op.1/Karol-Szymanowski-Nine-Preludes-op.1.ly",
+    "commit": "158926bb34475a034c3f169ec124981dc0b6e1d8",
+    "main_sha256": "ae4f78e4d52d6365d5ccf50eab36aec1e6a1f63e1166976451c3f0ace9120087",
+    "attribution": "Davide Madrisan, Open Scores",
+    "license_note": "CC BY-NC-SA 4.0 as recorded during source acquisition; source files have separate contributor and upstream credits"
+  },
+  {
+    "id": "scriabin_59_2",
+    "composer": "Scriabin",
+    "source_url": "https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/ScriabinA/O59/prelude/prelude.ly",
+    "commit": "2144afd6f52d56c5b6995b8b589ef1268b3139f0",
+    "attribution": "Federico Bruni, Mutopia",
+    "license": "Public Domain as declared in the LilyPond header",
+    "main_sha256": "317de97852e22419d58c9ee22292a0556d4267cd5bef4279a8ae0eaefdb0e358"
+  },
+  {
+    "id": "ravel_jeux",
+    "composer": "Ravel",
+    "source_url": "https://github.com/DCMLab/ravel_piano",
+    "data_file": "Ravel_-_Jeux_dEau.notes.tsv",
+    "data_sha256": "3c66476c95170d8b77d7f9a048860761314996040cd7573ef076c1a971ed3abb",
+    "version_note": "Local downloaded snapshot; commit not recorded. Hash identifies the exact TSV used."
+  },
+  {
+    "id": "bartok",
+    "composer": "Bartók",
+    "source": "User-supplied Bartok_Sz56_Romanian Folk Dances_6.pdf",
+    "extraction": "Prior manually transcribed opening excerpt; reference source hash below",
+    "source_sha256": "549372abd6bb4f58bc5035d5f40e7c35765634b0de235c1879e98cf1708ee411"
+  },
+  {
+    "id": "berg_1",
+    "composer": "Berg",
+    "source_url": "https://imslp.org/wiki/Piano_Sonata,_Op.1_(Berg,_Alban)",
+    "edition": "Antoine Portes, 2020, IMSLP 651355",
+    "license_note": "CC0 engraving as listed on source page",
+    "input": "extensions/berg_opening.json",
+    "scope": "pickup plus bars 1-8; manually corrected against page 1",
+    "source_sha256": "0f9769bad776cf5625f0bdfeeccadca8590f5de29c1b6cde387127f0dd40ff08"
+  },
+  {
+    "id": "webern_27",
+    "composer": "Webern",
+    "source_url": "https://github.com/automata/ana-music/tree/335cbdc617c919d29e9384c4e490cabca5736f73/corpus/classical/users/craig/classical/webern/op27",
+    "commit": "335cbdc617c919d29e9384c4e490cabca5736f73",
+    "source_hashes": "extensions/webern_full_summary.json",
+    "rights_note": "Public access is not a blanket redistribution licence. Full source encodings are not bundled or relicensed; source-specific rights remain with their owners.",
+    "scope": "I: bars 1-14; II: pickup and bars 1-8; III: bars 1-8. Complete-movement descriptors reported separately."
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "number": "1",
+    "name": "framework",
+    "stem": "Figure_1_framework",
+    "caption": "Figure 1. Event-preserving sonification as constrained composition. (A) Pitch relationships and expression are designed while prepared event occurrences remain fixed. (B) A synthetic four-category example illustrates the injective pitch map and common affine clock; colours track category identity. It is a schematic, not an optimised production or participant stimulus. (C) The implemented set energy assigns cost 0.15 to each two-note subset of a C-major triad and zero to the complete triad and singletons. Its third-order Möbius coefficient is −0.45, proving a property of the objective, not a perceptual benefit of that component.",
+    "width_inches": 7.2,
+    "height_inches": 6.4,
+    "png": "Figure_1_framework.png"
+  },
+  {
+    "number": "2",
+    "name": "pooled_listening",
+    "stem": "Figure_2_pooled_listening",
+    "caption": "Figure 2. Pooled listening results. (A) Design summary; all conditions preserve the prepared onsets and shared expressive attributes, varying categorical pitch allocation. (B) Counts and percentages include all 453 completed responses for each judgement; the three outcomes come from the same respondents. (C) Optimized shares condition on non-neutral responses (n = 376, 404 and 365, respectively); bars are two-sided 95% exact binomial intervals, not multiplicity-adjusted simultaneous intervals. Dashed line: conditional probability 0.5. Exact two-sided sign tests compare the observed optimized and random counts, with Holm correction across three pooled outcomes. Inference concerns responses to the fixed excerpts, not a population of independent musical works.",
+    "width_inches": 7.2,
+    "height_inches": 6.5,
+    "png": "Figure_2_pooled_listening.png"
+  },
+  {
+    "number": "3",
+    "name": "source_specific_listening",
+    "stem": "Figure_3_source_specific_listening",
+    "caption": "Figure 3. Source-specific listening results. Each source has one fixed excerpt: 153 neural, 153 earthquake and 147 X-ray responses. Points show optimized shares among non-neutral responses; horizontal bars are 95% exact binomial intervals. The right columns retain optimized/equal/random counts and exact two-sided sign-test p values, Holm-corrected jointly across all nine source–outcome comparisons. Intervals are pointwise and have not been adjusted for multiplicity. X-ray personal preference remains inconclusive at the conventional 0.05 threshold (adjusted p = 0.0594), although its beauty and pleasantness contrasts favour optimization. Between-source or between-outcome differences are not themselves tested by comparing separate p values.",
+    "width_inches": 7.2,
+    "height_inches": 6.4,
+    "png": "Figure_3_source_specific_listening.png"
+  },
+  {
+    "number": "4",
+    "name": "keyboard_coordinates",
+    "stem": "Figure_4_keyboard_coordinates",
+    "caption": "Figure 4. Two-dimensional description of 25 keyboard selections. Points use the same descriptor definitions. Excerpts include pickups, where present, and at least eight complete bars. Webern movement I extends to bar 14 (10.5 quarter notes), the shortest complete-bar extension supporting all four temporal scales at both phases; movements II and III use eight bars. Casella, Szymanowski and Webern are equal-piece means of two, nine and three constituents. X combines duration-weighted chord-template affinity with a roughness penalty; Y describes multiscale continuity of aggregate pitch distributions. These are model descriptors, not calibrated listener ratings. Parameter sensitivity is shown in Figure S1.",
+    "width_inches": 11.0,
+    "height_inches": 7.2,
+    "png": "Figure_4_keyboard_coordinates.png"
+  },
+  {
+    "number": "5",
+    "name": "keyboard_shuffle_controls",
+    "stem": "Figure_5_keyboard_shuffle_controls",
+    "caption": "Figure 5. Original-minus-shuffle-mean descriptor differences for all 25 selections. Each excerpt has 99 seeded notehead-pitch permutations with onsets and durations fixed; cycle constituents are shuffled independently and averaged equally. This retains the notehead pitch histogram, not pitch-duration associations or voice identity. The original exceeds its shuffled mean in 20 of 25 selections for X and 22 for Y; negative contrasts are retained. These conditional descriptive controls do not test perceived beauty or establish a population-level ranking of musical periods. Full coordinates and conditional Monte Carlo fractions are supplied with the computational data.",
+    "width_inches": 7.2,
+    "height_inches": 8.0,
+    "png": "Figure_5_keyboard_shuffle_controls.png"
+  },
+  {
+    "number": "S1",
+    "name": "keyboard_parameter_sensitivity",
+    "stem": "Figure_S1_keyboard_parameter_sensitivity",
+    "caption": "Figure S1. Parameter sensitivity. Left: X ranges over release extensions of 0, 0.25, 0.5 and 1 quarter note. Right: Y ranges over four phase-averaged temporal-scale coordinates at 0.5, 1, 2 and 4 quarter notes. Main coordinates are marked by points. Cycle endpoints are equal-piece means of constituent lower and upper endpoints, as specified in the implementation; they need not correspond to a single common parameter across pieces. These ranges are sensitivity summaries, not sampling confidence intervals or estimates of listener uncertainty.",
+    "width_inches": 7.2,
+    "height_inches": 8.0,
+    "png": "Figure_S1_keyboard_parameter_sensitivity.png"
+  }
+]

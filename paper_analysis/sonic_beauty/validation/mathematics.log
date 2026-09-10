@@ -1,0 +1,9 @@
+{
+  "sets": 4096,
+  "rotations_per_set": 12,
+  "rotation_error": 0.0,
+  "mobius_reconstruction_error": 4.440892098500626e-15,
+  "major_triad_third_order_coefficient": -0.44999999999999996,
+  "transport_linear_program_cases": 12,
+  "transport_max_error": 1.7763568394002505e-15
+}

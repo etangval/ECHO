@@ -1,0 +1,28 @@
+{
+  "release_tail": 0.5,
+  "release_sensitivity": [
+    0,
+    0.25,
+    0.5,
+    1
+  ],
+  "transport_spans": [
+    0.5,
+    1,
+    2,
+    4
+  ],
+  "phases": [
+    0,
+    0.5
+  ],
+  "controls": 99,
+  "seed_base": 20260910,
+  "unit": "quarter note",
+  "coverage_policy": "at least two distinct absolute pitches",
+  "aggregation": "equal arithmetic mean of individual-unit X and Y",
+  "excluded": [
+    "Berg Op.1: unverified full OMR",
+    "Webern Op.27: unverified full OMR; prior movement assignment invalid"
+  ]
+}

@@ -1,0 +1,14 @@
+            outcome           source  optimized  equal  random  optimized_share_nonneutral  exact_lower  exact_upper       p_holm
+       Sonic beauty    Neural spikes        111     18      24                    0.822222     0.747128     0.882647 1.145858e-13
+       Sonic beauty      Earthquakes        103     24      26                    0.798450     0.718796     0.863915 2.913593e-11
+       Sonic beauty X-ray detections         74     35      38                    0.660714     0.565195     0.747500 1.721137e-03
+       Sonic beauty           Pooled        288     77      88                    0.765957     0.719828     0.807843 1.283881e-25
+       Pleasantness    Neural spikes        125      4      24                    0.838926     0.769881     0.893987 1.013324e-16
+       Pleasantness      Earthquakes        108     22      23                    0.824427     0.748294     0.885325 1.606722e-13
+       Pleasantness X-ray detections         85     23      39                    0.685484     0.595995     0.765873 1.323009e-04
+       Pleasantness           Pooled        318     49      86                    0.787129     0.743940     0.826052 6.640271e-32
+Personal preference    Neural spikes        106     15      32                    0.768116     0.688706     0.835664 7.460556e-10
+Personal preference      Earthquakes         91     39      23                    0.798246     0.712810     0.867596 4.645486e-10
+Personal preference X-ray detections         67     34      46                    0.592920     0.496473     0.684374 5.943073e-02
+Personal preference           Pooled        264     88     101                    0.723288     0.674332     0.768579 6.266280e-18
+Saved 6 figures in PNG, PDF and SVG.

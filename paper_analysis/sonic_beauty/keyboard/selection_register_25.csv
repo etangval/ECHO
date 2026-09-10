@@ -1,0 +1,26 @@
+number,id,composer,title,X,Y,status
+1,bach,Bach,Prelude BWV 846,89.04218143414367,87.5361444566784,opening excerpt
+2,rameau,Rameau,Tambourin,77.56768875093769,57.19449932501186,opening excerpt
+3,scarlatti,Scarlatti,Sonata K.455,84.9224064467466,55.495684332718,opening excerpt
+4,mozart_turkish,Mozart,Turkish March,69.84953038340977,76.75080579788504,opening excerpt
+5,mozart_545,Mozart,Sonata K.545 / I,77.38115969800221,65.51554368235045,opening excerpt
+6,beethoven_moon,Beethoven,Moonlight / I,85.49778585397775,86.61033969095838,opening excerpt
+7,beethoven_elise,Beethoven,Fur Elise,80.70075891809677,54.63384758677895,opening excerpt
+8,schubert,Schubert,Impromptu Op.90/3,86.4436136621988,87.1176600127066,opening excerpt
+9,mendelssohn,Mendelssohn,Venetian Boat Song Op.30/6,82.19891896970917,69.1173075014342,opening excerpt
+10,schumann,Schumann,Traumerei,78.15947609459056,74.37303110648037,opening excerpt
+11,chopin,Chopin,Nocturne Op.9/2,73.53647689473321,67.65124930206127,opening excerpt
+12,liszt,Liszt,Consolation No.3,84.61899535509613,76.92635960086702,opening excerpt
+13,brahms,Brahms,Intermezzo Op.118/2,78.76054176355989,69.46699609217514,opening excerpt
+14,grieg,Grieg,Wedding Day at Troldhaugen,84.38691862145535,65.05340376767558,opening excerpt
+15,debussy_clair,Debussy,Clair de lune,71.06041118310465,90.90367099254544,opening excerpt
+16,debussy_arab,Debussy,Arabesque No.1,84.84645364842687,59.44931993077377,opening excerpt
+17,satie_gym,Satie,Gymnopedie No.1,83.06047637148795,64.70910072160505,opening excerpt
+18,bartok,Bartók,Romanian Folk Dances No.6,59.88768222676463,67.00909319175047,opening excerpt
+19,ravel_jeux,Ravel,Jeux d’eau,55.238041142609006,68.19184778023386,opening excerpt
+20,schoenberg_19_6,Schoenberg,Op.19 No.6,44.99993994022269,75.05759359891545,opening excerpt
+21,scriabin_59_2,Scriabin,Prelude Op.59 No.2,50.88685814513261,57.79775198262455,opening excerpt
+22,casella_31,Casella,Deux Contrastes Op.31,45.884979748627,56.03517469397289,opening excerpt
+23,szymanowski_1,Szymanowski,Nine Preludes Op.1,63.11665516260834,73.72447344332687,opening excerpt
+24,berg_1,Berg,Piano Sonata Op.1,49.55053411554201,67.69257898787092,opening excerpt
+25,webern_27,Webern,Variations Op.27 (3 movements),59.53805035523083,40.81883967734299,opening excerpt

@@ -1,0 +1,17 @@
+{
+  "Berg": {
+    "scope": "pickup and bars 1-8",
+    "notes": 131,
+    "quarters": 26,
+    "review": "Pitch and duration entries checked against page 1 of the Portes edition. Replacement input is independent of the faulty full-score OMR candidate.",
+    "corrections": "Replaced missing bar-5 upper notes and malformed durations; corrected bar-2 A-sharp; corrected bar-6 accidental and duplicate note; corrected bar-7 voice timing and natural accidentals.",
+    "full_score_status": "Not corrected throughout; not used for full-score estimates."
+  },
+  "Webern": {
+    "source": "Pinned KernScores mirror in automata/ana-music",
+    "structural_checks": "Two staves; all 54, 23 (including pickup), and 66 measures present; every measure matches 3/16, 2/4 (one-quarter pickup), or 3/2. Opening systems compared with the Roside score.",
+    "encoding": "music21 10.5.0",
+    "scope": "Opening I bars 1-14, II pickup and bars 1-8, III bars 1-8; full-movement values also computed.",
+    "not_claimed": "Independent full-note editorial verification of every source-encoding entry."
+  }
+}

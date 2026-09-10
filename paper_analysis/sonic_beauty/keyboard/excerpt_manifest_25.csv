@@ -1,0 +1,37 @@
+id,unit,end_quarters,notes,scope,source
+bach,1,32.0,144,"pickup, if any, plus full bars 1–8",https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/BachJS/BWV846/wtk1-prelude1/wtk1-prelude1.ly
+rameau,1,34.0,73,"pickup, if any, plus full bars 1–8",https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/RameauJP/tambourin/tambourin.ly
+scarlatti,1,32.0,85,"pickup, if any, plus full bars 1–8",https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/ScarlattiD/K455/scarlatti-k455/scarlatti-k455.ly
+mozart_turkish,1,17.0,98,"pickup, if any, plus full bars 1–8",https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/MozartWA/KV331/KV331_3_RondoAllaTurca/KV331_3_RondoAllaTurca-lys/KV331_3_RondoAllaTurca.ly
+mozart_545,1,32.0,122,"pickup, if any, plus full bars 1–8",https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/MozartWA/KV545/K545-1/K545-1.ly
+beethoven_moon,1,32.0,132,"pickup, if any, plus full bars 1–8",https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/BeethovenLv/O27/moonlight/moonlight-lys/moonlight1-a4.ly
+beethoven_elise,1,12.5,55,"pickup, if any, plus full bars 1–8",https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/BeethovenLv/WoO59/fur_Elise_WoO59/fur_Elise_WoO59.ly
+schubert,1,64.0,237,"pickup, if any, plus full bars 1–8",https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/SchubertF/D899/SchubertF-D899-3-Impromptu/SchubertF-D899-3-Impromptu.ly
+mendelssohn,1,24.5,78,"pickup, if any, plus full bars 1–8",https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/Mendelssohn-BartholdyF/O30/LiederOhneWorte_-_Op30_No6/LiederOhneWorte_-_Op30_No6.ly
+schumann,1,33.0,126,"pickup, if any, plus full bars 1–8",https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/SchumannR/O15/SchumannOp15No07/SchumannOp15No07.ly
+chopin,1,48.5,270,"pickup, if any, plus full bars 1–8",https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/ChopinFF/O9/chopin_nocturne_op9_n2/chopin_nocturne_op9_n2.ly
+liszt,1,32.0,119,"pickup, if any, plus full bars 1–8",https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/LisztF/S.172/liszt-consolation-no3/liszt-consolation-no3.ly
+brahms,1,25.0,125,"pickup, if any, plus full bars 1–8",https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/BrahmsJ/O118/intermezzo/intermezzo.ly
+grieg,1,32.0,183,"pickup, if any, plus full bars 1–8",https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/GriegE/O65/troldhaugen/troldhaugen.ly
+debussy_clair,1,36.0,104,"pickup, if any, plus full bars 1–8",https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/DebussyC/L75/debussy_Ste_Bergamesq_Clair/debussy_Ste_Bergamesq_Clair.ly
+debussy_arab,1,32.0,139,"pickup, if any, plus full bars 1–8",https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/DebussyC/L66/debussy_Arabesque_1/debussy_Arabesque_1.ly
+satie_gym,1,24.0,41,"pickup, if any, plus full bars 1–8",https://github.com/MutopiaProject/MutopiaProject/blob/2144afd6f52d56c5b6995b8b589ef1268b3139f0/ftp/SatieE/gymnopedie_1/gymnopedie_1.ly
+bartok,1,16.0,84,"pickup, if any, plus full bars 1–8",User-supplied PDF; opening manually transcribed in prior analysis
+ravel_jeux,1,28.0,267,"pickup, if any, plus full bars 1–8",https://github.com/DCMLab/ravel_piano
+schoenberg_19_6,1,33.0,80,"pickup, if any, plus full bars 1–8",Open Scores LilyPond; project attribution in source manifest
+scriabin_59_2,1,25.5,143,"pickup, if any, plus full bars 1–8",Mutopia LilyPond; project attribution in source manifest
+casella_31,1,25.0,90,"pickup, if any, plus full bars 1–8",Open Scores LilyPond; both pieces equally weighted
+casella_31,2,18.125,122,"pickup, if any, plus full bars 1–8",Open Scores LilyPond; both pieces equally weighted
+szymanowski_1,1,16.0,57,"pickup, if any, plus full bars 1–8",Open Scores LilyPond; all nine equally weighted
+szymanowski_1,2,48.0,242,"pickup, if any, plus full bars 1–8",Open Scores LilyPond; all nine equally weighted
+szymanowski_1,3,24.0,108,"pickup, if any, plus full bars 1–8",Open Scores LilyPond; all nine equally weighted
+szymanowski_1,4,16.0,95,"pickup, if any, plus full bars 1–8",Open Scores LilyPond; all nine equally weighted
+szymanowski_1,5,24.5,133,"pickup, if any, plus full bars 1–8",Open Scores LilyPond; all nine equally weighted
+szymanowski_1,6,24.5,122,"pickup, if any, plus full bars 1–8",Open Scores LilyPond; all nine equally weighted
+szymanowski_1,7,32.0,144,"pickup, if any, plus full bars 1–8",Open Scores LilyPond; all nine equally weighted
+szymanowski_1,8,33.0,131,"pickup, if any, plus full bars 1–8",Open Scores LilyPond; all nine equally weighted
+szymanowski_1,9,32.0,179,"pickup, if any, plus full bars 1–8",Open Scores LilyPond; all nine equally weighted
+berg_1,1,26.0,131,pickup plus complete bars 1-8,"https://imslp.org/wiki/Piano_Sonata,_Op.1_(Berg,_Alban)"
+webern_27,1,10.5,68,"pickup, if any, plus complete bars 1-14",https://raw.githubusercontent.com/automata/ana-music/335cbdc617c919d29e9384c4e490cabca5736f73/corpus/classical/users/craig/classical/webern/op27/variations-1.krn
+webern_27,2,17.0,29,"pickup, if any, plus complete bars 1-8",https://raw.githubusercontent.com/automata/ana-music/335cbdc617c919d29e9384c4e490cabca5736f73/corpus/classical/users/craig/classical/webern/op27/variations-2.krn
+webern_27,3,48.0,23,"pickup, if any, plus complete bars 1-8",https://raw.githubusercontent.com/automata/ana-music/335cbdc617c919d29e9384c4e490cabca5736f73/corpus/classical/users/craig/classical/webern/op27/variations-3.krn

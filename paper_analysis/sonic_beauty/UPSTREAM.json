@@ -1,0 +1,10 @@
+{
+  "repository": "https://github.com/etangval/ECHO",
+  "reference_commit": "27f4f10b9e0d485afcc6e8bb09c6afc0999e0219",
+  "package_date": "2026-09-10",
+  "status": "ECHO repository analysis supplement",
+  "scope": "25 keyboard selections, aggregate-only listening tests, six manuscript figures, Webern full-movement descriptors and archived extraction workflows",
+  "method_name": "ECHO (Event-Conserving Harmonic Optimisation)",
+  "directory": "paper_analysis/sonic_beauty",
+  "upstream_repository": "https://github.com/etangval/digitalcreativity"
+}

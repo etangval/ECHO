@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "mode": "full",
+  "python": "3.12.14",
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "mathematics": {
+    "sets": 4096,
+    "rotations_per_set": 12,
+    "rotation_error": 0.0,
+    "mobius_reconstruction_error": 4.440892098500626e-15,
+    "major_triad_third_order_coefficient": -0.44999999999999996,
+    "transport_linear_program_cases": 12,
+    "transport_max_error": 1.7763568394002505e-15
+  },
+  "keyboard": {
+    "selections": 25,
+    "units": 36,
+    "noteheads": 4379,
+    "max_coordinate_difference": 2.842170943040401e-14,
+    "all_components_defined": true,
+    "omr_included": false,
+    "max_control_difference": 4.263256414560601e-14
+  },
+  "shuffle_controls_recomputed": true,
+  "figure_input_matches_keyboard_reference": true,
+  "figures": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    "S1"
+  ],
+  "listening_tests": 12,
+  "listening_source": "Manuscript aggregate counts, not participant-level records",
+  "scope": "Reproduction of calculations; not validation of perceived beauty or OMR"
+}
