@@ -1,0 +1,30 @@
+{
+  "data": {
+    "events": 579,
+    "categories": 12,
+    "seeded_runs": 24
+  },
+  "search": {
+    "proposals_per_run": 14000,
+    "extended_proposals": 56000
+  },
+  "objective": {
+    "minimum": 0.096804577684162,
+    "median": 0.09919317057082686,
+    "maximum": 0.1037515410124405,
+    "sd": 0.002164641369816066,
+    "cv_percent": 2.1705762360100733,
+    "median_excess_over_minimum_percent": 2.467437949533724,
+    "maximum_excess_over_minimum_percent": 7.176275641575458
+  },
+  "pairwise_mapping": {
+    "median_exact_pitch_fraction": 0.0,
+    "median_pitch_class_fraction": 0.08333333333333333,
+    "median_best_transposition_pitch_class_fraction": 0.25,
+    "median_pitch_rank_spearman": 0.03146853146853147
+  },
+  "declared_seeds": {
+    "best_14000": 0.1004690617461109,
+    "best_56000": 0.0935720524063129
+  }
+}
