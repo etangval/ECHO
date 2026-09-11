@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.0 — 2026-09-11
+
+- Consolidate the complete public sonification toolkit and existing manuscript analysis supplement under ECHO (Event-Conserving Harmonic Optimisation).
+- Add gap-aware cumulative-distance event detection for the tracked sheep data, with an optional explicit within-step crossing-time model. Preserve observed endpoints and keep inferred times distinct from measurements.
+- Include the preparation example, mathematical documentation, nine movement tests and the 30-minute listening demonstration.
+- Preserve historical engine commits and releases in ECHO. Keep the `digitalcreativity` Python package and command compatible with existing scripts; existing analysis inputs and figures remain unchanged.
+
 ## 0.2.0 — 2026-09-10
 
 - Source adapters for Online Retail II invoices, NYC January 2026 taxi pickups, Movebank cat displacement and the selected DANDI 000552 CA1 NWB session. Originals remain unchanged; provenance and exclusion decisions are recorded locally.

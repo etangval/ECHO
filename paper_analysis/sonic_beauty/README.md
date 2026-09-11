@@ -4,9 +4,10 @@ This directory contains the code and numerical inputs used for the keyboard
 comparisons, aggregate listening tests, and final figures in **Designing for Sonic
 Beauty: Event-Preserving Sonification through Harmonic Optimisation**.
 
-It is an addition to `etangval/digitalcreativity`, prepared against reference
-commit `27f4f10b9e0d485afcc6e8bb09c6afc0999e0219`. It does not replace the
-existing sonification engine. ECHO stands for **Event-Conserving Harmonic Optimisation**.
+It accompanies the sonification engine in `etangval/ECHO`, prepared against
+historical reference commit `27f4f10b9e0d485afcc6e8bb09c6afc0999e0219`, which
+remains available in this repository's preserved engine history. ECHO stands for
+**Event-Conserving Harmonic Optimisation**.
 
 ## Location
 

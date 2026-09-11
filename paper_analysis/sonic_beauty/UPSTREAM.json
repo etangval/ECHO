@@ -6,5 +6,5 @@
   "scope": "25 keyboard selections, aggregate-only listening tests, six manuscript figures, Webern full-movement descriptors and archived extraction workflows",
   "method_name": "ECHO (Event-Conserving Harmonic Optimisation)",
   "directory": "paper_analysis/sonic_beauty",
-  "upstream_repository": "https://github.com/etangval/digitalcreativity"
+  "upstream_repository": "https://github.com/etangval/ECHO"
 }
