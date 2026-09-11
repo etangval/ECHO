@@ -1,4 +1,4 @@
-"""Reproduce the exploratory seed-sensitivity analysis and Figure S2."""
+"""Reproduce the exploratory seed-sensitivity analysis and Figure S3."""
 from pathlib import Path
 import itertools
 import json
@@ -87,4 +87,4 @@ ax.legend(frameon=False, ncol=3, loc="upper right")
 
 fig.suptitle("Seed sensitivity of ECHO pitch optimization", fontsize=13, fontweight="bold")
 for ext in ("png", "pdf", "svg"):
-    fig.savefig(ROOT / f"Figure_S2_seed_sensitivity.{ext}", dpi=300, bbox_inches="tight")
+    fig.savefig(ROOT / f"Figure_S3_seed_sensitivity.{ext}", dpi=300, bbox_inches="tight")
