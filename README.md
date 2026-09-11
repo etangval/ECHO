@@ -113,6 +113,7 @@ The [ECHO analysis supplement](paper_analysis/sonic_beauty/) reproduces the keyb
 - [Mathematical method and preservation claims](docs/METHOD.md)
 - [Input formats and domain adapters](docs/INPUTS.md)
 - [Public sources and process diagnostics](docs/RESEARCH.md)
+- [Simultaneously tracked sheep: movement-distance events](docs/SHEEP.md)
 - [Listening synthesis and aggregate analysis](docs/LISTENING.md)
 - [Dependency/sample licences](docs/THIRD_PARTY.md)
 - [Version history and scope](CHANGELOG.md)
