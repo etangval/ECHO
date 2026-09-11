@@ -19,3 +19,15 @@ Repeat with thresholds 25 and 100 m to examine sensitivity. Report event counts,
 For the 30-minute sheep realization, the creative selection retains 50 identities from one recording block, at least 95% valid steps per identity, at least 45 active identities in each five-minute playback bin, and 100–150 attacks/minute overall. Rounded playback factors and contiguous window starts are searched before pitch optimisation. Among feasible candidates, the selection cost is five-minute rate CV plus half the relative deviation of the mean from 125 attacks/minute. This listening-texture selection is separate from inferential sampling or the harmonic objective. The other source adapters retain their own event definitions.
 
 The reusable array-level operator is `digitalcreativity.movement.distance_threshold_events`. The example script reads local files, records their SHA-256 hashes, and writes a new event table; it does not download or upload observations.
+
+## Optional model-based timing within a sample interval
+
+Endpoint detection can concentrate notes on the sampling lattice: at five-fold playback compression, all endpoints fall 1.2 seconds apart. An explicit interpolation option estimates each already detected crossing's position within its six-second step:
+
+```sh
+python examples/prepare_sheep_distances.py raw/MovementDistance.csv raw/ts.csv prepared/sheep-interpolated --threshold 50 --interpolate
+```
+
+Let the crossing step span times $t_j$ to $t_{j+1}$, have length $d_j>0$, and complete an accumulated length $A_j$ for threshold $D$. Under constant speed within that step, the crossing fraction is $f_j=1-(A_j-D)/d_j$, and the estimated time is $\hat t=t_j+f_j(t_{j+1}-t_j)$. The operator retains the same detections and the same reset-at-endpoint rule, including discarded overshoot; it does not replace this detector with a continuous path-length counter. Only the time attached to each detection is estimated. The reusable function is `interpolate_distance_crossings`.
+
+Observed endpoints, interval lower bounds and crossing fractions remain in the output table. No missing interval is bridged and no random timing jitter is added. These times are model estimates, not extra observations or improved GPS resolution. Any timing-preservation or reconstruction claim must specify whether it concerns observed endpoints or the derived estimated event process. Interpolation can disperse artificial coincidences, but does not prove that the original animals moved at the inferred sub-sample times.
