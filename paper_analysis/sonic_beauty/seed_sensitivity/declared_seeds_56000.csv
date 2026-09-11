@@ -1,0 +1,5 @@
+seed,accepted,objective,chord_set_cost,roughness_proxy,melody_leap_cost,register_cost,evaluation
+1701,3470,0.09639255796720173,0.04927789976750193,0.041492790534863266,0.26594982078853047,0.034410531807714445,"Same target excerpt, .08-second grid with .32-second and 1.5-second support. Design proxies, not measured liking or held-out performance."
+1723,3194,0.09357205240631296,0.04770957117024024,0.032455133038597456,0.28046594982078854,0.030875341824985605,"Same target excerpt, .08-second grid with .32-second and 1.5-second support. Design proxies, not measured liking or held-out performance."
+1741,3393,0.09594228107993656,0.0478235598036683,0.03102743480374746,0.2959752090800478,0.04116832181922855,"Same target excerpt, .08-second grid with .32-second and 1.5-second support. Design proxies, not measured liking or held-out performance."
+
