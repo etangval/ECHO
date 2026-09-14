@@ -60,7 +60,6 @@ def analyze_surrogates(prepared, output, population=True, seed=20260910, replica
     events = pd.read_parquet(folder/'events.parquet')
     coverage = pd.read_parquet(folder/'observation_intervals.parquet')
     prep = json.loads((folder/'preparation.json').read_text(encoding='utf-8'))
-    if prep['source'] == 'cats': population = False
     by_times = {str(k): g.event_time.to_numpy(float) for k,g in events.groupby('entity_id')}
     by_cov = {str(k): merge_intervals(g[['start_seconds','stop_seconds']].to_numpy(float)) for k,g in coverage.groupby('entity_id')}
     eligible = [k for k,t in by_times.items() if k in by_cov and len(interval_sample(t,by_cov[k])[0]) >= 30]

@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Remove the retired animal-tracking source adapter and dataset-specific examples from the current distribution. Generic GPS event extraction and the sheep workflow remain available.
+
 ## 0.3.0 — 2026-09-11
 
 - Consolidate the complete public sonification toolkit and existing manuscript analysis supplement under ECHO (Event-Conserving Harmonic Optimisation).
@@ -9,7 +13,7 @@
 
 ## 0.2.0 — 2026-09-10
 
-- Source adapters for Online Retail II invoices, NYC January 2026 taxi pickups, Movebank cat displacement and the selected DANDI 000552 CA1 NWB session. Originals remain unchanged; provenance and exclusion decisions are recorded locally.
+- Source adapters for Online Retail II invoices, NYC January 2026 taxi pickups and the selected DANDI 000552 CA1 NWB session. Originals remain unchanged; provenance and exclusion decisions are recorded locally.
 - Coverage-aware IEI, CV, CV2, LV, burstiness, event rates, multiscale Fano, ACF, power spectra, DFA, censored renewal fits, chronological held-out Poisson and binned self-exciting diagnostics. Local count and within-episode IEI surrogates; asynchronous animal deployments are not a simultaneous population.
 - Explicit datetime-unit normalization supports pandas 2 and 3 without a thousand-fold clock error.
 - Optional declared minimum recurring-identity count before uniform pitch-budget selection.

@@ -11,14 +11,14 @@ def test_datetime_storage_precision_does_not_rescale_seconds():
 
 
 def test_gps_gap_does_not_create_invented_movement():
-    gps=pd.DataFrame(dict(entity_id=['cat']*4,event_time=[0.,180.,3600.,3780.],latitude=[0.,0.,1.,1.],longitude=[0.,.0001,1.,1.0001],source_row=[1,2,3,4]))
+    gps=pd.DataFrame(dict(entity_id=['tracker']*4,event_time=[0.,180.,3600.,3780.],latitude=[0.,0.,1.,1.],longitude=[0.,.0001,1.,1.0001],source_row=[1,2,3,4]))
     events,coverage,_=displacement_events(gps,50.,900.)
     assert events.empty
     assert len(coverage)==2
 
 
 def test_crossing_retains_observed_time_and_censoring_bounds():
-    gps=pd.DataFrame(dict(entity_id=['cat']*3,event_time=[0.,180.,360.],latitude=[0.,0.,0.],longitude=[0.,.0001,.001],source_row=[1,2,3]))
+    gps=pd.DataFrame(dict(entity_id=['tracker']*3,event_time=[0.,180.,360.],latitude=[0.,0.,0.],longitude=[0.,.0001,.001],source_row=[1,2,3]))
     events,_,_=displacement_events(gps,50.,900.)
     assert len(events)==1
     assert events.iloc[0].event_time==360

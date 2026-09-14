@@ -62,7 +62,7 @@ def displacement_events(gps, threshold_m=50., max_gap_s=900.):
             for i in range(begin+1,end):
                 distance=float(haversine_m(lat[anchor],lon[anchor],lat[i],lon[i]))
                 if distance >= threshold_m:
-                    rows.append(dict(source="cats",entity_id=str(entity),event_id=f"cats:{entity}:{refs[i]}:{threshold_m:g}",event_time=float(t[i]),event_type="observed_displacement",time_lower=float(t[i-1]),time_upper=float(t[i]),mark_1=distance,mark_2=float(t[i]-t[anchor]),source_row=str(refs[i]),observation_id=f"{entity}:{episode}"))
+                    rows.append(dict(source="gps",entity_id=str(entity),event_id=f"gps:{entity}:{refs[i]}:{threshold_m:g}",event_time=float(t[i]),event_type="observed_displacement",time_lower=float(t[i-1]),time_upper=float(t[i]),mark_1=distance,mark_2=float(t[i]-t[anchor]),source_row=str(refs[i]),observation_id=f"{entity}:{episode}"))
                     anchor=i
         if len(t)>1:
             d=haversine_m(lat[:-1],lon[:-1],lat[1:],lon[1:]);dt=np.diff(t)
@@ -144,35 +144,6 @@ def prepare_taxi(path,output,strict=True):
     relaxed_events.to_parquet(folder/"relaxed_events.parquet",index=False)
     coverage=pd.DataFrame(dict(entity_id=sorted(events.entity_id.unique()),start_seconds=0.,stop_seconds=duration))
     return write_prepared(folder,events,coverage,dict(source="NYC TLC Yellow Taxi January 2026",source_sha256=digest(path),time_origin="2026-01-01 00:00:00 America/New_York wall clock",time_precision_seconds=1,strict=strict,quality_counts=dict(counts),relaxed_events=len(relaxed_events),excluded_rows=offset-len(events),rule="One pickup per source row; retain zero-duration/distance trips, exclude out-of-month/unknown-zone and strict negative amount or inconsistent-duration flags",coverage_scope="Monthly submitted taxi log; vendor completeness is not guaranteed"))
-
-
-def prepare_cats(path,reference_path,output,thresholds=(25.,50.,100.),primary=50.,max_gap=900.):
-    folder=new_directory(output)
-    d=pd.read_csv(path,dtype=str,keep_default_na=False)
-    d['source_row']=np.arange(2,len(d)+2)
-    visible=d.visible.str.lower().eq('true')
-    d=d.loc[visible].copy();origin=pd.Timestamp('2015-03-01T00:00:00Z').timestamp()
-    gps=pd.DataFrame(dict(entity_id=d['individual-local-identifier'],event_time=epoch_seconds(d.timestamp)-origin,latitude=pd.to_numeric(d['location-lat']),longitude=pd.to_numeric(d['location-long']),source_row=d.source_row))
-    gps.to_parquet(folder/'visible_gps.parquet',index=False)
-    reference=pd.read_csv(reference_path,dtype=str,keep_default_na=False)
-    deployments=pd.DataFrame(dict(entity_id=reference['animal-id'],start_seconds=epoch_seconds(reference['deploy-on-date'])-origin,stop_seconds=epoch_seconds(reference['deploy-off-date'])-origin))
-    deployments.to_parquet(folder/'deployment_intervals.parquet',index=False)
-    sensitivity=[]
-    for threshold in thresholds:
-        e,c,m=displacement_events(gps,threshold,max_gap)
-        e.to_parquet(folder/f'events_{threshold:g}m.parquet',index=False)
-        c.to_parquet(folder/f'coverage_{threshold:g}m.parquet',index=False)
-        sensitivity.append(dict(threshold_m=threshold,events=len(e),entities=int(e.entity_id.nunique()) if len(e) else 0))
-        if threshold==primary:events,coverage,movement=e,c,m
-    movement.to_csv(folder/'trajectory_metrics.csv',index=False)
-    # Sonification uses the documented tag deployment calendar; statistical
-    # exposure uses linked valid GPS intervals instead. Neither aligns cats.
-    global_cov=merge_intervals(deployments[['start_seconds','stop_seconds']].to_numpy())
-    covered=np.zeros(len(events),bool)
-    for a,b in global_cov:covered|=(events.event_time>=a)&(events.event_time<b)
-    outside=events.loc[~covered];outside.to_parquet(folder/'events_outside_deployment_calendar.parquet',index=False)
-    if len(outside):events=events.loc[covered].copy()
-    return write_prepared(folder,events,coverage,dict(source="Movebank Pet Cats Australia",source_sha256=digest(path),reference_sha256=digest(reference_path),time_origin="2015-03-01 00:00:00; Movebank exported clock interpreted as UTC, original strings retained in raw",time_precision_seconds=1,primary_threshold_m=primary,max_gap_seconds=max_gap,threshold_sensitivity=sensitivity,visible_fixes=len(gps),outside_global_deployment_calendar=len(outside),event_rule="First observed displacement >= threshold from the previous event/episode anchor; reset across >15-minute gaps; source fix time retained with crossing interval bounds",coverage_scope="Statistics: consecutive visible-fix episodes with <=15-minute gaps. Audio: union of documented deployment calendars. Channels were not recorded simultaneously throughout; no cat population synchrony inference."),global_cov)
 
 
 def prepare_hippocampus(path,output):

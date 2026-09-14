@@ -68,10 +68,9 @@ def main(argv=None):
     imp.add_argument("--pi-min", type=float, default=20)
     imp.add_argument("--pi-max", type=float, default=1500)
     prep = commands.add_parser("prepare", help="Prepare a supported public source locally; originals stay unchanged")
-    prep.add_argument("source", choices=["retail", "taxi", "cats", "hippocampus"])
+    prep.add_argument("source", choices=["retail", "taxi", "hippocampus"])
     prep.add_argument("input", type=Path)
     prep.add_argument("output", type=Path)
-    prep.add_argument("--reference", type=Path, help="Cat reference-data CSV")
     prep.add_argument("--relaxed-taxi", action="store_true")
     analysis = commands.add_parser("analyze", help="Coverage-aware point-process diagnostics (research extra)")
     analysis.add_argument("folder", type=Path)
@@ -135,20 +134,15 @@ def main(argv=None):
             result = pipeline.verify(args.folder)
         elif args.command == "prepare":
             from . import preprocessing
-            if args.source == "cats" and args.reference is None:
-                raise ValueError("Cats require --reference")
             pipeline.new_directory(args.output)
-            if args.source == "cats":
-                result = preprocessing.prepare_cats(args.input, args.reference, args.output)
-            elif args.source == "taxi":
+            if args.source == "taxi":
                 result = preprocessing.prepare_taxi(args.input, args.output, strict=not args.relaxed_taxi)
             else:
                 result = getattr(preprocessing, "prepare_"+args.source)(args.input, args.output)
         elif args.command == "analyze":
             from .processes import analyze_source
             pipeline.new_directory(args.output)
-            prep_info = json.loads((args.folder/"preparation.json").read_text(encoding="utf-8"))
-            asynchronous = args.asynchronous or prep_info.get("source") == "cats"
+            asynchronous = args.asynchronous
             result = analyze_source(args.folder, args.output, population=not asynchronous)
             if args.surrogates:
                 from .surrogates import analyze_surrogates
