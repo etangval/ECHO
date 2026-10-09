@@ -1,0 +1,2 @@
+# Preserve author-supplied event tables exactly, including their line endings.
+datasets/rat_ca1_listening/*.csv -text
