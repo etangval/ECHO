@@ -2,7 +2,7 @@
 
 Turn a multivariate point process into MIDI and stereo piano audio using a fixed, injective identity-to-pitch map and sequence-wide, higher-order harmonic optimisation.
 
-This is the public implementation accompanying **“Designing for Sonic Beauty: Event-Preserving Sonification through Harmonic Optimisation”** (manuscript in preparation). The repository contains the sonification engine, artificial examples, and a [manuscript analysis supplement](paper_analysis/sonic_beauty/) with keyboard note excerpts, aggregate listening counts, statistics and figures. Participant-level study responses, private event mappings and recorded study stimuli are not included.
+This is the public implementation accompanying **“Designing for Sonic Beauty: Event-Conserving Sonification through Harmonic Optimization”** (manuscript in preparation). The repository contains the sonification engine, artificial examples, and a [manuscript analysis supplement](paper_analysis/sonic_beauty/) with keyboard note excerpts, aggregate listening counts, statistics and figures. The [rat CA1 listening dataset](datasets/rat_ca1_listening/) includes the complete laboratory spike-time table, the exact listening excerpt and its pitch maps. Participant-level questionnaire responses and recorded study audio are not included.
 
 The optimisation seeks a more coherent harmonic texture. Its objective is a declared compositional proxy; it does not establish that listeners find the output more beautiful, pleasant or calming. “Global” refers to the scope of the objective, not a guarantee of a global optimum.
 
@@ -102,7 +102,7 @@ digitalcreativity sonify data/retail/sonification_events.csv runs/retail --inter
 
 The optional recurring-identity threshold is declared before uniform identity selection; it does not remove individual events from a retained voice. Default `1` preserves the original general-purpose eligibility rule. Scientific diagnostics retain all prepared identities independently of the voice budget.
 
-The archived listening comparison used a **three-harmonic sustained-tone instrument**, distinct from the sampled piano in the hour-long demonstrations. `render-study` exposes that renderer and its original attack mixture, delays and constant-gain loudness matching. This permits new controlled stimuli without distributing the confidential study excerpts. `listening` aggregates local seven-point A/B records with explicit orientation, bootstrap intervals and multiplicity corrections. See [listening tools](docs/LISTENING.md).
+The archived listening comparison used a **three-harmonic sustained-tone instrument**, distinct from the sampled piano in the hour-long demonstrations. `render-study` exposes that renderer and its original attack mixture, delays and constant-gain loudness matching. The [neuronal listening dataset](datasets/rat_ca1_listening/) provides the laboratory spike times, exact excerpt and pitch maps used in that comparison. Participant-level questionnaire responses remain private. `listening` aggregates local seven-point A/B records with explicit orientation, bootstrap intervals and multiplicity corrections. See [listening tools](docs/LISTENING.md).
 
 ## Manuscript analysis supplement
 
@@ -124,7 +124,7 @@ python -m pip install ".[audio,fits,research,test]"
 python -m pytest -q
 ```
 
-Tests cover exact active-set aggregation, the annealing update, transposition of all 4096 pitch-class sets, extended chords, exhaustive small ordered partitions, geographic wraparound, GTI conversion, seeded reproducibility, coincident-event MIDI reconstruction, overflow-resistant hour-long load evaluation, controlled baselines and an offline stereo audio ending. CI runs on Windows, Linux and macOS. An original study record is neither required nor included.
+Tests cover exact active-set aggregation, the annealing update, transposition of all 4096 pitch-class sets, extended chords, exhaustive small ordered partitions, geographic wraparound, GTI conversion, seeded reproducibility, coincident-event MIDI reconstruction, overflow-resistant hour-long load evaluation, controlled baselines and an offline stereo audio ending. CI runs on Windows, Linux and macOS. The toolkit can be used without the study records; the neuronal listening input is separately available in the [dataset folder](datasets/rat_ca1_listening/).
 
 The complete toolkit and manuscript analysis supplement are maintained together in [ECHO v0.3.0](https://github.com/etangval/ECHO/releases/tag/v0.3.0). Historical engine releases [v0.1.0](https://github.com/etangval/ECHO/releases/tag/v0.1.0) and [v0.2.0](https://github.com/etangval/ECHO/releases/tag/v0.2.0) retain their original commit identities here; the `legacy-sonification` branch preserves the earlier engine history. The Python import name and command remain `digitalcreativity` for compatibility. Record the release/commit, installed dependency versions and generated manifest in your own work. A seed alone does not promise identical floating-point results across every numerical-library version or platform.
 
@@ -136,6 +136,6 @@ The code is [MIT licensed](LICENSE). Piano samples are separately licensed CC BY
 
 上の Quick start を実行すると、人工データから約2分の音源を作れます。`--duration 3600` で60分版を指定できます。最後の10秒間には新しい音を加えません。自分のCSVには `time_seconds` と `category` を用意してください。自動選択には別途、実際の観測区間を指定した `start_seconds,stop_seconds` のCSVが必要です。
 
-参加者の個票・非公開のイベント対応表・実験音源は公開していません。論文解析の補足フォルダには、楽曲の冒頭抜粋の音符、アンケート集計値、検定結果と図を収録しています。再構成できるのは、保持したカテゴリの準備済みイベントと時刻です。除外した観測や連続値の属性、MP3から元データが復元できるという意味ではありません。音の美しさや好感度の向上は、このコードだけで実証されるものではありません。
+聴取実験に用いた研究室由来のラットCA1スパイク時刻表、使用区間のイベント、音程対応表を[データフォルダ](datasets/rat_ca1_listening/)で公開しています。参加者の個票と実験音源は公開していません。論文解析の補足フォルダには、楽曲の冒頭抜粋の音符、アンケート集計値、検定結果と図を収録しています。再構成できるのは、保持したカテゴリの準備済みイベントと時刻です。除外した観測や連続値の属性、MP3から元データが復元できるという意味ではありません。音の美しさや好感度の向上は、このコードだけで実証されるものではありません。
 
 Author: Yuji Ikegaya. This repository does not imply institutional endorsement.
